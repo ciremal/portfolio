@@ -10,7 +10,7 @@ import HikingIcon from "@mui/icons-material/Hiking";
 const HobbiesContainer = () => {
   return (
     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 justify-items-center w-full">
-      <HobbyIcon icon={<SportsMmaIcon fontSize="inherit" />} label="UFC" />
+      <HobbyIcon icon={<SportsMmaIcon fontSize="inherit" />} label="MMA" />
       <HobbyIcon
         icon={<SportsTennisIcon fontSize="inherit" />}
         label="Tennis"
