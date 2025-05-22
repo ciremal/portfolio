@@ -7,11 +7,11 @@ import Card from "./components/card";
 
 export default function Home() {
   return (
-    <main className="h-screen">
+    <main className="h-[120vh]">
       <section>
         <div className="w-[40%] bg-primary"></div>
         <div className="w-[60%] bg-background"></div>
-        <div className="absolute top-[55%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-[70%] w-[60%] flex items-center justify-center">
+        <div className="absolute top-[45%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-[65%] w-[60%] flex items-center justify-center">
           <div className="w-full h-full flex">
             <div
               id="container-1"
@@ -72,10 +72,16 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section>
-        <div className="flex flex-col items-center w-full">
-          <h1>Experience</h1>
-          <div className="flex flex-col items-center gap-10">
+      <section className="my-20">
+        <div className="flex flex-col items-center w-full gap-20">
+          <div className="flex flex-col gap-16 items-center">
+            <div className="text-6xl font-semibold px-6 py-4 rounded-md text-[#0050FF]">
+              Experience
+            </div>
+            <div className="h-1.5 w-1/2 rounded-md bg-gradient-to-r from-[#0050FF] to-[#ff00ae]"></div>
+          </div>
+
+          <div className="divider flex flex-col items-center gap-10">
             <Card
               company="Center for Advanced Computing"
               position="Full-Stack Software Developer Intern"

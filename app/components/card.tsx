@@ -32,7 +32,7 @@ const Card = ({
       }}
     >
       <div
-        className={`p-5 rounded-t-lg transition duration-300 ease-in-out border border-b-0 border-transparent group-hover:border-secondary`}
+        className={`p-5 rounded-t-lg transition duration-300 ease-in-out border-2 border-b-0 border-transparent group-hover:border-secondary`}
       >
         <div className="w-full flex justify-between gap-4">
           <div className="w-1/2 flex">
@@ -50,7 +50,7 @@ const Card = ({
             <p className="text-xl">{duration}</p>
             <div className="flex gap-3 flex-wrap mt-3">
               {techStack.map((item) => {
-                return <Chip label={item} />;
+                return <Chip label={item} key={item} />;
               })}
             </div>
           </div>
@@ -76,7 +76,7 @@ const Card = ({
           expand
             ? "bg-primary group-hover:border-primary"
             : "bg-background group-hover:border-secondary"
-        } w-full rounded-b-lg transition-colors duration-300 ease-in-out flex justify-center items-center border border-t-0 border-transparent`}
+        } w-full rounded-b-lg transition-colors duration-300 ease-in-out flex justify-center items-center border-2 border-t-0 border-transparent`}
       >
         <div
           className={`transition-transform duration-300 ${
