@@ -41,7 +41,7 @@ const Card = ({
               width={250}
               height={250}
               alt={logo}
-              className="rounded-lg border-2 border-cyan-500"
+              className="rounded-lg"
             />
           </div>
           <div className="w-full h-full text-left">
@@ -61,7 +61,7 @@ const Card = ({
         className={`overflow-hidden transition-[max-height] duration-500 ease-in-out text-2xl text-left bg-primary
         }`}
         style={{
-          maxHeight: expand ? "400px" : "0px",
+          maxHeight: expand ? "500px" : "0px",
         }}
       >
         <div className="p-5 flex flex-col gap-6">
