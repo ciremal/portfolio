@@ -6,12 +6,11 @@ import HobbiesContainer from "../components/hobbiesContainer";
 
 const AboutSection = () => {
   return (
-    <section className="h-full">
-      <div className="w-[40%] h-full bg-primary"></div>
-      <div className="absolute top-[55%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-[70%] w-[60%] flex items-center justify-center">
-        <div className="w-full h-full flex">
+    <section id="about" className="relative mt-20 w-full py-20">
+      <div className="absolute top-0 bg-primary w-[40%] h-full"></div>
+      <div className="flex h-full justify-center">
+        <div className="w-[60%] flex">
           <div
-            id="container-1"
             className="flex items-center flex-col w-full bg-secondary z-1"
             style={{ boxShadow: "-6px 4px 8px 3px rgba(0,0,0,0.1)" }}
           >
@@ -42,10 +41,7 @@ const AboutSection = () => {
               </a>
             </div>
           </div>
-          <div
-            id="container-2"
-            className="flex items-center flex-col w-full bg-background px-8 text-center"
-          >
+          <div className="flex items-center flex-col w-full bg-background px-8 text-center">
             <div className="flex flex-col text-left text-[20px] gap-8">
               <div className="text-6xl flex justify-center items-center">
                 Hello <span className="text-5xl ml-3">👋</span>
@@ -68,6 +64,8 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
+
+      {/* </div> */}
     </section>
   );
 };

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Card from "../components/card";
 import ProgramLangChip from "../components/programLangChip";
 
@@ -23,7 +22,7 @@ const ExperienceSection = () => {
   ];
 
   return (
-    <section className="my-20">
+    <section id="experience" className="pt-50">
       <div className="flex flex-col items-center w-full gap-20">
         <div className="flex flex-col gap-16 items-center">
           <div className="text-6xl font-semibold px-6 py-4 rounded-md text-[#0050FF]">

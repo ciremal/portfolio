@@ -5,6 +5,7 @@
   --foreground: #0a0a0a;
   --primary: #6dd7fd;
   --secondary: #a5e7ff;
+  --myBlue: #0050FF;
 }
 
 @theme inline {
@@ -12,6 +13,7 @@
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
+  --color-myBlue: var(--myBlue);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -22,6 +24,11 @@
     --foreground: #ededed;
   }
 } */
+
+html {
+  scroll-behavior: smooth;
+}
+
 
 body {
   background: var(--background);

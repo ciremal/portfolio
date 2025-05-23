@@ -8,11 +8,11 @@ const Header = () => {
           Eric Lam
         </Link>
         <div className="text-2xl w-[60%] flex justify-between">
-          <Link href={"/"}>Home</Link>
-          <Link href={"/about"}>About</Link>
-          <Link href={"/experience"}>Experience</Link>
-          <Link href={"/projects"}>Projects</Link>
-          <Link href={"/contact"}>Contact</Link>
+          <a href={"/"}>Home</a>
+          <a href={"#about"}>About</a>
+          <a href={"#experience"}>Experience</a>
+          <a href={"#projects"}>Projects</a>
+          <a href={"#contact"}>Contact</a>
         </div>
       </div>
     </header>
