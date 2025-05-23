@@ -73,10 +73,8 @@ const Card = ({
 
       <div
         className={`${
-          expand
-            ? "bg-secondary group-hover:border-secondary"
-            : "bg-background group-hover:border-secondary"
-        } w-full rounded-b-lg transition-colors duration-300 ease-in-out flex justify-center items-center border-2 border-t-0 border-transparent`}
+          expand ? "bg-secondary" : "bg-background"
+        } w-full rounded-b-lg transition-colors duration-300 ease-in-out flex justify-center items-center border-2 border-t-0 border-transparent group-hover:border-secondary`}
       >
         <div
           className={`transition-transform duration-300 ${
