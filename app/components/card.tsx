@@ -58,7 +58,7 @@ const Card = ({
       </div>
 
       <div
-        className={`overflow-hidden transition-[max-height] duration-500 ease-in-out text-2xl text-left bg-primary
+        className={`overflow-hidden transition-[max-height] duration-500 ease-in-out text-2xl text-left bg-secondary
         }`}
         style={{
           maxHeight: expand ? "500px" : "0px",
@@ -74,7 +74,7 @@ const Card = ({
       <div
         className={`${
           expand
-            ? "bg-primary group-hover:border-primary"
+            ? "bg-secondary group-hover:border-secondary"
             : "bg-background group-hover:border-secondary"
         } w-full rounded-b-lg transition-colors duration-300 ease-in-out flex justify-center items-center border-2 border-t-0 border-transparent`}
       >
