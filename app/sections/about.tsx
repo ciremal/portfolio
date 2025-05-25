@@ -94,17 +94,17 @@ const AboutSection = () => {
                 Hello <span className="text-5xl ml-3">👋</span>
               </div>
               <div>
-                I'm a Software Developer with a Computer Science degree from
-                Queen's University. I have a passion for building software
-                applications with the goal of contributing positively to society
-                through the code I write.
+                {
+                  "I'm a Software Developer with a Computer Science degree from Queen's University. I have a passion for building software applications with the goal of contributing positively to society through the code I write."
+                }
               </div>
               <div>
-                I'm always looking for opportunities to grow my skillset and
-                contribute these skills to practical and meaningful projects.
+                {
+                  "I'm always looking for opportunities to grow my skillset and contribute these skills to practical and meaningful projects."
+                }
               </div>
               <div className="flex flex-col justify-center items-center gap-4">
-                My hobbies and interests outside of software development!
+                {"My hobbies and interests outside of software development!"}
                 <HobbiesContainer />
               </div>
             </div>

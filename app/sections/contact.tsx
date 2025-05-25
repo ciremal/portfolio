@@ -22,6 +22,11 @@ const ContactSection = () => {
 
     if (!formRef.current) return;
 
+    if (!serviceID || !templateID || !publicKey) {
+      setError(true);
+      throw new Error("Missing environment variables for EmailJS");
+    }
+
     setIsLoading(true);
     emailjs
       .sendForm(serviceID, templateID, formRef.current, {
