@@ -2,28 +2,42 @@
 
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import CircularProgress from "@mui/material/CircularProgress";
 
 const ContactSection = () => {
   const formRef = useRef<HTMLFormElement>(null);
+  const [isLoading, setIsLoading] = useState(false);
   const [sent, setSent] = useState(false);
+  const [error, setError] = useState(false);
+
+  const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+  const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+  const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
+    setError(false);
+    setSent(false);
+
     if (!formRef.current) return;
 
+    setIsLoading(true);
     emailjs
-      .sendForm("service_g139qhy", "template_xkjl22j", formRef.current, {
-        publicKey: "N4VmfQTqSvoL9ehui",
+      .sendForm(serviceID, templateID, formRef.current, {
+        publicKey: publicKey,
       })
-      .then(
-        () => {
-          console.log("SUCCESS!");
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
+      .then(() => {
+        console.log("SUCCESS!");
+        setSent(true);
+        formRef.current?.reset();
+        setIsLoading(false);
+      })
+      .catch((error) => {
+        console.log("FAILED...", error.text);
+        setError(true);
+        setIsLoading(false);
+      });
   };
 
   return (
@@ -38,7 +52,7 @@ const ContactSection = () => {
         <form
           ref={formRef}
           onSubmit={sendEmail}
-          className="form w-[40%] flex flex-col gap-6 p-6 rounded-xl bg-white w-full"
+          className="form flex flex-col gap-6 p-6 rounded-xl bg-white w-full"
           style={{ boxShadow: "0px 4px 12px 2px rgba(0,0,0,0.1)" }}
         >
           <input
@@ -62,10 +76,18 @@ const ContactSection = () => {
           />
           <button
             type="submit"
-            className="bg-myBlue text-2xl text-white px-6 py-3 rounded-lg hover:bg-[#003ec6] transition"
+            className="bg-myBlue text-2xl text-white px-6 py-3 rounded-lg hover:bg-[#003ec6] transition cursor-pointer"
           >
-            Send
+            {isLoading ? <CircularProgress /> : "Send"}
           </button>
+          {sent && (
+            <p className="text-center text-green-500 text-xl">Message sent!</p>
+          )}
+          {error && (
+            <p className="text-center text-red-500 text-xl">
+              An error occured. Please try again later.
+            </p>
+          )}
         </form>
       </div>
     </section>

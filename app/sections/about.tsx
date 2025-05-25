@@ -3,15 +3,22 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
 import HobbiesContainer from "../components/hobbiesContainer";
+import DescriptionIcon from "@mui/icons-material/Description";
 
 const AboutSection = () => {
   return (
     <section id="about" className="relative mt-20 w-full py-20">
       <div className="absolute top-0 bg-primary w-[40%] h-full"></div>
-      <div className="flex h-full justify-center">
-        <div className="w-[60%] flex">
+      <div className="flex flex-col items-center gap-16 h-full">
+        <div className="flex flex-col gap-8 items-center">
+          <div className="text-6xl font-semibold rounded-md text-[#0050FF] z-10">
+            About Me
+          </div>
+          <div className="h-1.5 w-1/2 rounded-md bg-gradient-to-r from-[#0050FF] to-[#ff00ae]"></div>
+        </div>
+        <div className="w-[50%] flex h-[75%]">
           <div
-            className="flex items-center flex-col w-full bg-secondary z-1"
+            className="flex items-center flex-col w-full bg-secondary z-1 "
             style={{ boxShadow: "-6px 4px 8px 3px rgba(0,0,0,0.1)" }}
           >
             <div className="flex justify-center items-center flex-col h-full w-full gap-10">
@@ -30,14 +37,54 @@ const AboutSection = () => {
               <a
                 href={"https://www.linkedin.com/in/eric-lam-a3774720b/"}
                 target="_blank"
+                className="relative group"
               >
-                <LinkedInIcon fontSize="large" />
+                <LinkedInIcon
+                  fontSize="large"
+                  className="group-hover:opacity-80"
+                />
+                <div className="absolute left-1/2 -translate-x-1/2 top-full mt-2 text-sm bg-gray-800 text-white px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap">
+                  LinkedIn
+                </div>
               </a>
-              <a href="https://github.com/ciremal" target="_blank">
-                <GitHubIcon fontSize="large" />
+              <a
+                href="https://github.com/ciremal"
+                target="_blank"
+                className="relative group"
+              >
+                <GitHubIcon
+                  fontSize="large"
+                  className="group-hover:opacity-80"
+                />
+                <div className="absolute left-1/2 -translate-x-1/2 top-full mt-2 text-sm bg-gray-800 text-white px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap">
+                  GitHub
+                </div>
               </a>
-              <a href="mailto:eric.lam42@hotmail.com" target="_blank">
-                <EmailIcon fontSize="large" />
+              <a
+                href="mailto:eric.lam42@hotmail.com"
+                target="_blank"
+                className="relative group"
+              >
+                <EmailIcon
+                  fontSize="large"
+                  className="group-hover:opacity-80"
+                />
+                <div className="absolute left-1/2 -translate-x-1/2 top-full mt-2 text-sm bg-gray-800 text-white px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap">
+                  Email
+                </div>
+              </a>
+              <a
+                href="EricLamResume.pdf"
+                target="_blank"
+                className="relative group"
+              >
+                <DescriptionIcon
+                  fontSize="large"
+                  className="group-hover:opacity-80"
+                />
+                <div className="absolute left-1/2 -translate-x-1/2 top-full mt-2 text-sm bg-gray-800 text-white px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition duration-300 whitespace-nowrap">
+                  Resume
+                </div>
               </a>
             </div>
           </div>

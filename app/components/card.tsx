@@ -65,8 +65,8 @@ const Card = ({
         }}
       >
         <div className="p-5 flex flex-col gap-6">
-          {paragraphs.map((paragraph) => {
-            return <p>{paragraph}</p>;
+          {paragraphs.map((paragraph, index) => {
+            return <p key={"paragraph" + index}>{paragraph}</p>;
           })}
         </div>
       </div>
