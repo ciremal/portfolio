@@ -17,7 +17,8 @@ const HomeSection = () => {
       <div className="text-center flex justify-center flex-col gap-12 z-10">
         <div className="flex flex-col gap-4">
           <div className="text-8xl font-semibold">
-            {`Hello, I'm ${(<span className="text-myBlue">Eric</span>)}`}
+            {`Hello, I'm `}
+            <span className="text-myBlue">Eric</span>
           </div>
           <div className="text-6xl">
             {"I'm a full stack software developer."}
