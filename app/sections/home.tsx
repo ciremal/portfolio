@@ -16,11 +16,11 @@ const HomeSection = () => {
 
       <div className="text-center flex justify-center flex-col gap-12 z-10">
         <div className="flex flex-col gap-4">
-          <div className="text-8xl font-semibold">
+          <div className="text-7xl font-semibold">
             {`Hello, I'm `}
             <span className="text-myBlue">Eric</span>
           </div>
-          <div className="text-6xl">
+          <div className="text-5xl">
             {"I'm a full stack software developer."}
           </div>
         </div>
@@ -28,13 +28,13 @@ const HomeSection = () => {
         <div className="flex justify-center gap-4">
           <a
             href="#about"
-            className="rounded-md px-8 py-2 text-2xl bg-myBlue text-white shadow-md duration-300 hover:-translate-y-2 hover:brightness-90"
+            className="rounded-md px-8 py-2 text-xl bg-myBlue text-white shadow-md duration-300 hover:-translate-y-2 hover:brightness-90"
           >
             View my work
           </a>
           <a
             href="#contact"
-            className="border rounded-md px-8 py-2 text-2xl bg-background text-myBlue shadow-md duration-300 hover:-translate-y-2 hover:brightness-95"
+            className="border rounded-md px-8 py-2 text-xl bg-background text-myBlue shadow-md duration-300 hover:-translate-y-2 hover:brightness-95"
           >
             Contact me
           </a>

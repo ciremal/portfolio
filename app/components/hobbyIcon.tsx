@@ -14,7 +14,7 @@ const HobbyIcon = ({ icon, label }: HobbyIconProps) => {
         duration-300 ease-in-out hover:scale-110 hover:shadow-xl
         group`}
       >
-        <div className="text-5xl">{icon}</div>
+        <div className="text-4xl">{icon}</div>
       </div>
       <div className="mt-2 text-md text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
         {label}

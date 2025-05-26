@@ -22,10 +22,10 @@ const ExperienceSection = () => {
   ];
 
   return (
-    <section id="experience" className="pt-50">
+    <section id="experience" className="pt-30">
       <div className="flex flex-col items-center w-full gap-20">
         <div className="flex flex-col gap-16 items-center">
-          <div className="text-6xl font-semibold px-6 py-4 rounded-md text-[#0050FF]">
+          <div className="text-5xl font-semibold px-6 py-4 rounded-md text-[#0050FF]">
             💼 Experience 💼
           </div>
           <div className="h-1.5 w-1/2 rounded-md bg-gradient-to-r from-[#0050FF] to-[#ff00ae]"></div>
@@ -109,7 +109,7 @@ const ExperienceSection = () => {
             </div>
             <div className="h-1.5 w-1/2 rounded-md bg-gradient-to-r from-[#0050FF] to-[#ff00ae]"></div>
           </div>
-          <div className="flex flex-wrap justify-center gap-8 px-20">
+          <div className="flex flex-wrap justify-center gap-8 px-16">
             {skills.map((item) => (
               <ProgramLangChip
                 name={item.name}

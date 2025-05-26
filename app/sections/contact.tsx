@@ -46,10 +46,10 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="pb-20">
-      <div className="flex flex-col items-center w-full gap-20">
-        <div className="flex flex-col gap-16 items-center">
-          <div className="text-6xl font-semibold px-6 py-4 rounded-md text-myBlue">
+    <section id="contact" className="pb-8 pt-10">
+      <div className="flex flex-col items-center w-full gap-16">
+        <div className="flex flex-col gap-8 items-center">
+          <div className="text-5xl font-semibold px-6 py-4 rounded-md text-myBlue">
             Lets Get In Touch
           </div>
           <div className="h-1.5 w-1/2 rounded-md bg-gradient-to-r from-myBlue to-[#ff00ae]"></div>
@@ -65,23 +65,23 @@ const ContactSection = () => {
             name="name"
             placeholder="Full Name"
             required
-            className="border-0 border-b-2 py-5 pl-1 pr-5 text-xl focus:outline-none focus:border-myBlue hover:border-myBlue"
+            className="border-0 border-b-2 py-5 pl-1 pr-5 text-md focus:outline-none focus:border-myBlue hover:border-myBlue"
           />
           <input
             type="email"
             name="email"
             placeholder="Email"
             required
-            className="border-0 border-b-2 py-5 pl-1 pr-5 text-xl focus:outline-none focus:border-myBlue hover:border-myBlue"
+            className="border-0 border-b-2 py-5 pl-1 pr-5 text-md focus:outline-none focus:border-myBlue hover:border-myBlue"
           />
           <textarea
             name="message"
             placeholder="Message"
-            className="border-0 border-b-2 py-5 pl-1 pr-5 text-xl focus:outline-none focus:border-myBlue hover:border-myBlue"
+            className="border-0 border-b-2 py-5 pl-1 pr-5 text-md focus:outline-none focus:border-myBlue hover:border-myBlue"
           />
           <button
             type="submit"
-            className="bg-myBlue text-2xl text-white px-6 py-3 rounded-lg hover:bg-[#003ec6] transition cursor-pointer"
+            className="bg-myBlue text-lg text-white px-6 py-3 rounded-lg hover:bg-[#003ec6] transition cursor-pointer"
           >
             {isLoading ? <CircularProgress /> : "Send"}
           </button>

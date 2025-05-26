@@ -38,16 +38,16 @@ const Card = ({
           <div className="w-1/2 flex">
             <Image
               src={`/${logo}`}
-              width={250}
-              height={250}
+              width={200}
+              height={200}
               alt={logo}
               className="rounded-lg"
             />
           </div>
           <div className="w-full h-full text-left">
-            <p className="text-3xl font-semibold">{company}</p>
-            <p className="text-3xl">{position}</p>
-            <p className="text-xl">{duration}</p>
+            <p className="text-2xl font-semibold">{company}</p>
+            <p className="text-2xl">{position}</p>
+            <p className="text-lg">{duration}</p>
             <div className="flex gap-3 flex-wrap mt-3">
               {techStack.map((item) => {
                 return <Chip label={item} key={item} />;
@@ -58,7 +58,7 @@ const Card = ({
       </div>
 
       <div
-        className={`overflow-hidden transition-[max-height] duration-500 ease-in-out text-2xl text-left bg-secondary
+        className={`overflow-hidden transition-[max-height] duration-500 ease-in-out text-md text-left bg-secondary
         }`}
         style={{
           maxHeight: expand ? "500px" : "0px",
