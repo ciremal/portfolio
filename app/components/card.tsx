@@ -10,7 +10,8 @@ type CardProps = {
   duration: string;
   techStack: string[];
   logo: string;
-  paragraphs: string[];
+  description: string;
+  bulletPoints: string[];
 };
 
 const Card = ({
@@ -19,7 +20,8 @@ const Card = ({
   duration,
   techStack,
   logo,
-  paragraphs,
+  description,
+  bulletPoints,
 }: CardProps) => {
   const [expand, setExpand] = useState(false);
 
@@ -65,9 +67,12 @@ const Card = ({
         }}
       >
         <div className="p-5 flex flex-col gap-6">
-          {paragraphs.map((paragraph, index) => {
-            return <p key={"paragraph" + index}>{paragraph}</p>;
-          })}
+          {description}
+          <ul className="list-disc pl-6">
+            {bulletPoints.map((item, index) => {
+              return <li key={company + "bulletpoint" + index}>{item}</li>;
+            })}
+          </ul>
         </div>
       </div>
 

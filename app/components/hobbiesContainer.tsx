@@ -6,10 +6,11 @@ import SportsKabaddiIcon from "@mui/icons-material/SportsKabaddi";
 import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
 import FlightIcon from "@mui/icons-material/Flight";
 import HikingIcon from "@mui/icons-material/Hiking";
+import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
 
 const HobbiesContainer = () => {
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 justify-items-center w-full">
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 justify-items-center">
       <HobbyIcon icon={<SportsMmaIcon fontSize="inherit" />} label="MMA" />
       <HobbyIcon
         icon={<SportsTennisIcon fontSize="inherit" />}
@@ -22,8 +23,8 @@ const HobbiesContainer = () => {
       <HobbyIcon icon={<FlightIcon fontSize="inherit" />} label="Travel" />
       <HobbyIcon icon={<HikingIcon fontSize="inherit" />} label="Hiking" />
       <HobbyIcon
-        icon={<SportsTennisIcon fontSize="inherit" />}
-        label="Squash"
+        icon={<SportsEsportsIcon fontSize="inherit" />}
+        label="Video Games"
       />
       <HobbyIcon
         icon={<SportsKabaddiIcon fontSize="inherit" />}

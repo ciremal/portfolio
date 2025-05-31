@@ -46,18 +46,24 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="pb-8 pt-10">
-      <div className="flex flex-col items-center w-full gap-16">
+    <section id="contact" className="section">
+      <div className="flex flex-col items-center w-[90vw] gap-16">
         <div className="flex flex-col gap-8 items-center">
-          <div className="text-5xl font-semibold px-6 py-4 rounded-md text-myBlue">
-            Lets Get In Touch
+          <div className="flex flex-col items-center gap-3">
+            <div className="text-5xl font-semibold rounded-md text-myBlue">
+              CONTACT
+            </div>
+            <div className="text-3xl font-semibold rounded-md text-myBlue">
+              Let's Get In Touch
+            </div>
           </div>
+
           <div className="h-1.5 w-1/2 rounded-md bg-gradient-to-r from-myBlue to-[#ff00ae]"></div>
         </div>
         <form
           ref={formRef}
           onSubmit={sendEmail}
-          className="form flex flex-col gap-6 p-6 rounded-xl bg-white w-full"
+          className="form flex flex-col gap-6 p-6 rounded-xl bg-white w-[40%]"
           style={{ boxShadow: "0px 4px 12px 2px rgba(0,0,0,0.1)" }}
         >
           <input

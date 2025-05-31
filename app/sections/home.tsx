@@ -24,21 +24,6 @@ const HomeSection = () => {
             {"I'm a full stack software developer."}
           </div>
         </div>
-
-        <div className="flex justify-center gap-4">
-          <a
-            href="#about"
-            className="rounded-md px-8 py-2 text-xl bg-myBlue text-white shadow-md duration-300 hover:-translate-y-2 hover:brightness-90"
-          >
-            View my work
-          </a>
-          <a
-            href="#contact"
-            className="border rounded-md px-8 py-2 text-xl bg-background text-myBlue shadow-md duration-300 hover:-translate-y-2 hover:brightness-95"
-          >
-            Contact me
-          </a>
-        </div>
       </div>
     </section>
   );

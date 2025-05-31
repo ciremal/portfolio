@@ -7,18 +7,17 @@ import DescriptionIcon from "@mui/icons-material/Description";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="relative mt-20 w-full py-20">
-      <div className="absolute top-0 bg-primary w-[40%] h-full"></div>
-      <div className="flex flex-col items-center gap-16 h-full">
+    <section id="about" className="section">
+      <div className="flex flex-col items-center gap-16">
         <div className="flex flex-col gap-8 items-center">
-          <div className="text-5xl font-semibold rounded-md text-[#0050FF] z-10">
-            About Me
+          <div className="text-5xl font-semibold rounded-md text-[#0050FF]">
+            ABOUT ME
           </div>
           <div className="h-1.5 w-1/2 rounded-md bg-gradient-to-r from-[#0050FF] to-[#ff00ae]"></div>
         </div>
-        <div className="w-full flex h-full justify-center">
+        <div className="w-[80%] flex justify-center">
           <div
-            className="flex items-center flex-col w-[30%] bg-secondary z-1 pt-6"
+            className="flex items-center flex-col w-[30%] bg-secondary"
             style={{ boxShadow: "-6px 4px 8px 3px rgba(0,0,0,0.1)" }}
           >
             <div className="flex justify-center items-center flex-col h-full w-full gap-8">
@@ -31,9 +30,12 @@ const AboutSection = () => {
               />
               <p className="text-2xl font-bold">Eric Lam</p>
               <div className="h-1 w-[20%] bg-foreground"></div>
-              <p className="text-2xl">Software Developer</p>
+              <div className="text-center">
+                <p className="text-2xl">Software Developer</p>
+                <p className="text-lg">Toronto, ON</p>
+              </div>
             </div>
-            <div className="flex justify-evenly items-center h-16 w-full bg-background px-10 text-3xl">
+            <div className="flex justify-evenly items-center w-full bg-background px-10 py-2 text-3xl">
               <a
                 href={"https://www.linkedin.com/in/eric-lam-a3774720b/"}
                 target="_blank"
@@ -88,19 +90,17 @@ const AboutSection = () => {
               </a>
             </div>
           </div>
-          <div className="flex items-center flex-col w-[40%] bg-background px-8 text-center">
+          <div className="flex items-center flex-col w-[70%] bg-background px-8">
             <div className="flex flex-col text-left text-[20px] gap-6">
-              <div className="text-5xl flex justify-center items-center">
-                Hello <span className="text-3xl ml-3">👋</span>
-              </div>
               <div className="text-[18px]">
                 {
-                  "I'm a Software Developer with a Computer Science degree from Queen's University. I have a passion for building software applications with the goal of contributing positively to society through the code I write."
+                  "I'm a Software Developer with a CS degree from Queens University. Over the years through my industry experience and personal projects, I have developed a passion for building software applications with the goal of meaningfulness. Whether these applications are for day-to-day convenience, entertainment, or improving business processes, I look to ensure what I build can make a visible positive difference."
                 }
               </div>
               <div className="text-[18px]">
+                {" "}
                 {
-                  "I'm always looking for opportunities to grow my skillset and contribute these skills to practical and meaningful projects."
+                  "I'm always looking for opportunities to grow my skillset and contribute these skills to practical and meaningful projects. Specifically, I want to blend my passion for software development with health sciences. I find there's a lot of opportunity for improving accessibility, productivity, efficiency, and quality of life in this industry."
                 }
               </div>
               <div className="flex flex-col justify-center items-center gap-4 text-[18px]">

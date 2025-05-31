@@ -7,7 +7,7 @@ type HobbyIconProps = {
 
 const HobbyIcon = ({ icon, label }: HobbyIconProps) => {
   return (
-    <div className="flex flex-col items-center group">
+    <div className="flex flex-col items-center group mb-2">
       <div
         className={`flex flex-col items-center shadow-md rounded-md 
         p-2 bg-gradient-to-b from-primary to-secondary transition-transform 
