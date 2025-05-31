@@ -54,7 +54,7 @@ const ContactSection = () => {
               CONTACT
             </div>
             <div className="text-3xl font-semibold rounded-md text-myBlue">
-              Let's Get In Touch
+              {"Let's Get In Touch"}
             </div>
           </div>
 
